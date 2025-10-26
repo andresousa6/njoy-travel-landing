@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Njoy Travel.pt - A Nova Forma de Viajar</title>
+    <meta name="description" content="Descobre a nova forma de viajar com a Njoy Travel.pt. Experiências únicas, consultores especializados e momentos inesquecíveis.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Navegação principal">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40'%3E%3Ctext x='10' y='25' font-family='Poppins' font-size='20' font-weight='700' fill='%231E88A8'%3ENjoy%3C/text%3E%3C/svg%3E" alt="Njoy Travel" class="nav-logo">
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#destinos" class="nav-link">Destinos</a>
+                <a href="#consultores" class="nav-link">Consultores</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="btn btn-outline btn-sm" aria-label="Falar no WhatsApp">
+                    <i data-lucide="message-circle" class="icon"></i>
+                    WhatsApp
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <i data-lucide="menu" class="icon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" role="banner">
+        <div class="hero-background">
+            <div class="hero-image">
+                <img 
+                    src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" 
+                    alt="Paisagem de viagem com montanhas e céu azul"
+                    class="hero-bg-image"
+                    loading="eager"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                >
+                <!-- Fallback gradient background -->
+                <div class="hero-fallback" style="display: none;">
+                    <div class="hero-fallback-gradient"></div>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    A Nova Forma de 
+                    <span class="text-accent">Viajar</span>
+                </h1>
+                <p class="hero-description">
+                    Descobre experiências únicas, consultores especializados e momentos inesquecíveis. 
+                    A tua próxima aventura começa aqui.
+                </p>
+                
+                <div class="hero-actions">
+                    <button class="btn btn-accent btn-lg" id="open-quote-modal" aria-describedby="hero-cta-desc">
+                        <i data-lucide="plane" class="icon"></i>
+                        Pedir Orçamento
+                    </button>
+                    <p id="hero-cta-desc" class="sr-only">Botão para pedir orçamento personalizado</p>
+                    
+                    <button class="btn btn-outline btn-lg" id="open-consultant-modal">
+                        <i data-lucide="users" class="icon"></i>
+                        Torna-te Consultor
+                    </button>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Viagens Organizadas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Satisfação</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Suporte</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinos Section -->
+    <section id="destinos" class="destinos" role="region" aria-labelledby="destinos-heading">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="destinos-heading" class="section-title">
+                    Destinos de 
+                    <span class="text-accent">Sonho</span>
+                </h2>
+                <p class="section-description">
+                    Descobre os destinos mais incríveis do mundo, cuidadosamente selecionados 
+                    pelos nossos consultores especializados.
+                </p>
+            </div>
+            
+            <div class="destinos-grid">
+                <!-- Santorini Card -->
+                <article class="card card-interactive">
+                    <div class="card-image">
+                        <img 
+                            src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                            alt="Santorini, Grécia - Casas brancas com cúpulas azuis e vista para o mar"
+                            class="card-img"
+                            loading="lazy"
+                        >
+                        <div class="card-badge">
+                            <span class="badge badge-accent">
+                                <i data-lucide="sparkles" class="icon"></i>
+                                Especial Verão
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <h3 class="card-title">Santorini, Grécia</h3>
+                        <p class="card-description">
+                            Desfruta do pôr-do-sol mais romântico do mundo
+                        </p>
+                        
+                        <div class="card-meta">
+                            <span class="meta-item">
+                                <i data-lucide="clock" class="icon"></i>
+                                7 dias
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="users" class="icon"></i>
+                                2-4 pessoas
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="card-price">
+                            <p class="price-label">A partir de</p>
+                            <p class="price-value">€1.299</p>
+                        </div>
+                        <button class="btn btn-accent btn-sm" onclick="openQuoteModal('Santorini, Grécia')">
+                            Saber Mais
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Bali Card -->
+                <article class="card card-interactive">
+                    <div class="card-image">
+                        <img 
+                            src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                            alt="Bali, Indonésia - Templo de água com arquitetura tradicional balinesa"
+                            class="card-img"
+                            loading="lazy"
+                        >
+                        <div class="card-badge">
+                            <span class="badge badge-primary">
+                                <i data-lucide="heart" class="icon"></i>
+                                Lua de Mel
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <h3 class="card-title">Bali, Indonésia</h3>
+                        <p class="card-description">
+                            Templos sagrados, praias paradisíacas e cultura única
+                        </p>
+                        
+                        <div class="card-meta">
+                            <span class="meta-item">
+                                <i data-lucide="clock" class="icon"></i>
+                                10 dias
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="users" class="icon"></i>
+                                2-6 pessoas
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="card-price">
+                            <p class="price-label">A partir de</p>
+                            <p class="price-value">€1.899</p>
+                        </div>
+                        <button class="btn btn-accent btn-sm" onclick="openQuoteModal('Bali, Indonésia')">
+                            Saber Mais
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Tóquio Card -->
+                <article class="card card-interactive">
+                    <div class="card-image">
+                        <img 
+                            src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                            alt="Tóquio, Japão - Skyline urbano com torres modernas e neóns"
+                            class="card-img"
+                            loading="lazy"
+                        >
+                        <div class="card-badge">
+                            <span class="badge badge-success">
+                                <i data-lucide="zap" class="icon"></i>
+                                Oferta Limitada
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <h3 class="card-title">Tóquio, Japão</h3>
+                        <p class="card-description">
+                            Tradição e modernidade numa cidade única
+                        </p>
+                        
+                        <div class="card-meta">
+                            <span class="meta-item">
+                                <i data-lucide="clock" class="icon"></i>
+                                8 dias
+                            </span>
+                            <span class="meta-item">
+                                <i data-lucide="users" class="icon"></i>
+                                1-4 pessoas
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="card-price">
+                            <p class="price-label">A partir de</p>
+                            <p class="price-value">€2.199</p>
+                        </div>
+                        <button class="btn btn-accent btn-sm" onclick="openQuoteModal('Tóquio, Japão')">
+                            Saber Mais
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultores Section -->
+    <section id="consultores" class="consultores" role="region" aria-labelledby="consultores-heading">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="consultores-heading" class="section-title">
+                    Consultores 
+                    <span class="text-accent">Especializados</span>
+                </h2>
+                <p class="section-description">
+                    Conhece a nossa equipa de consultores que transformam sonhos em experiências reais.
+                </p>
+            </div>
+            
+            <div class="consultores-grid">
+                <div class="consultor-card">
+                    <div class="consultor-avatar">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%231E88A8'/%3E%3Ctext x='50' y='60' font-family='Poppins' font-size='40' font-weight='600' text-anchor='middle' fill='white'%3EM%3C/text%3E%3C/svg%3E" alt="Maria Silva" class="avatar-img">
+                        <div class="consultor-status">
+                            <span class="badge badge-success">
+                                <i data-lucide="circle" class="icon"></i>
+                                Online
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="consultor-info">
+                        <h3 class="consultor-name">Maria Silva</h3>
+                        <p class="consultor-specialty">Especialista em Europa</p>
+                        <p class="consultor-experience">5 anos de experiência</p>
+                        
+                        <div class="consultor-rating">
+                            <div class="stars">
+                                <i data-lucide="star" class="icon filled"></i>
+                                <i data-lucide="star" class="icon filled"></i>
+                                <i data-lucide="star" class="icon filled"></i>
+                                <i data-lucide="star" class="icon filled"></i>
+                                <i data-lucide="star" class="icon filled"></i>
+                            </div>
+                            <span class="rating-text">4.9 (127 avaliações)</span>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-sm">
+                            <i data-lucide="message-circle" class="icon"></i>
+                            Falar com Maria
+                        </button>
+                    </div>
+                </div>
+
+                <div class="consultor-card">
+                    <div class="consultor-avatar">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23FF6B4A'/%3E%3Ctext x='50' y='60' font-family='Poppins' font-size='40' font-weight='600' text-anchor='middle' fill='white'%3EJ%3C/text%3E%3C/svg%3E" alt="João Santos" class="avatar-img">
+                        <div class="consultor-status">
+                            <span class="badge badge-success">
+                                <i data-lucide="circle" class="icon"></i>
+                                Online
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="consultor-info">
+                        <h3 class="consultor-name">João Santos</h3>
+                        <p class="consultor-specialty">Especialista em Ásia</p>
+                        <p class="consultor-experience">7 anos de experiência</p>
+                        
+                        <div class="consultor-rating">
+                            <div class="stars">
+                                <i data-lucide="star" class="icon filled"></i>
+                                <i data-lucide="star" class="icon filled"></i>
+                                <i data-lucide="star" class="icon filled"></i>
+                                <i data-lucide="star" class="icon filled"></i>
+                                <i data-lucide="star" class="icon filled"></i>
+                            </div>
+                            <span class="rating-text">4.8 (89 avaliações)</span>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-sm">
+                            <i data-lucide="message-circle" class="icon"></i>
+                            Falar com João
+                        </button>
+                    </div>
+                </div>
+
+                <div class="consultor-card">
+                    <div class="consultor-avatar">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23C7442B'/%3E%3Ctext x='50' y='60' font-family='Poppins' font-size='40' font-weight='600' text-anchor='middle' fill='white'%3EA%3C/text%3E%3C/svg%3E" alt="Ana Costa" class="avatar-img">
+                        <div class="consultor-status">
+                            <span class="badge badge-warning">
+                                <i data-lucide="clock" class="icon"></i>
+                                Ausente
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="consultor-info">
+                        <h3 class="consultor-name">Ana Costa</h3>
+                        <p class="consultor-specialty">Especialista em Américas</p>
+                        <p class="consultor-experience">4 anos de experiência</p>
+                        
+                        <div class="consultor-rating">
+                            <div class="stars">
+                                <i data-lucide="star" class="icon filled"></i>
+                                <i data-lucide="star" class="icon filled"></i>
+                                <i data-lucide="star" class="icon filled"></i>
+                                <i data-lucide="star" class="icon filled"></i>
+                                <i data-lucide="star" class="icon filled"></i>
+                            </div>
+                            <span class="rating-text">4.9 (156 avaliações)</span>
+                        </div>
+                        
+                        <button class="btn btn-outline btn-sm" disabled>
+                            <i data-lucide="message-circle" class="icon"></i>
+                            Falar com Ana
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" role="region" aria-labelledby="cta-heading">
+        <div class="container">
+            <div class="cta-content">
+                <h2 id="cta-heading" class="cta-title">
+                    Pronto para a tua próxima 
+                    <span class="text-accent">aventura?</span>
+                </h2>
+                <p class="cta-description">
+                    Junta-te a milhares de viajantes que já descobriram a nova forma de viajar.
+                </p>
+                
+                <div class="cta-actions">
+                    <button class="btn btn-accent btn-lg" id="open-consultant-modal-cta">
+                        <i data-lucide="users" class="icon"></i>
+                        Torna-te Consultor Njoy
+                    </button>
+                    <button class="btn btn-outline btn-lg" id="open-quote-modal-cta">
+                        <i data-lucide="plane" class="icon"></i>
+                        Pedir Orçamento
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40'%3E%3Ctext x='10' y='25' font-family='Poppins' font-size='20' font-weight='700' fill='%231E88A8'%3ENjoy%3C/text%3E%3C/svg%3E" alt="Njoy Travel" class="footer-logo">
+                    <p class="footer-description">
+                        A nova forma de viajar. Experiências únicas, consultores especializados.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3 class="footer-title">Destinos</h3>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Europa</a></li>
+                            <li><a href="#" class="footer-link">Ásia</a></li>
+                            <li><a href="#" class="footer-link">Américas</a></li>
+                            <li><a href="#" class="footer-link">África</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3 class="footer-title">Suporte</h3>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Centro de Ajuda</a></li>
+                            <li><a href="#" class="footer-link">Contacto</a></li>
+                            <li><a href="#" class="footer-link">WhatsApp</a></li>
+                            <li><a href="#" class="footer-link">FAQ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3 class="footer-title">Empresa</h3>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Sobre Nós</a></li>
+                            <li><a href="#" class="footer-link">Carreiras</a></li>
+                            <li><a href="#" class="footer-link">Torna-te Consultor</a></li>
+                            <li><a href="#" class="footer-link">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 Njoy Travel.pt. Todos os direitos reservados.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i data-lucide="instagram" class="icon"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i data-lucide="facebook" class="icon"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="WhatsApp">
+                        <i data-lucide="message-circle" class="icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <button class="whatsapp-float" aria-label="Falar no WhatsApp" title="Falar no WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="whatsapp-icon">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+    </button>
+
+    <!-- Modal de Orçamento -->
+    <div id="quote-modal" class="modal" role="dialog" aria-labelledby="quote-modal-title" aria-hidden="true">
+        <div class="modal-overlay" aria-hidden="true"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="quote-modal-title" class="modal-title">
+                    <i data-lucide="plane" class="icon"></i>
+                    Pedir Orçamento Personalizado
+                </h2>
+                <button class="modal-close" aria-label="Fechar modal">
+                    <i data-lucide="x" class="icon"></i>
+                </button>
+            </div>
+            
+            <div class="modal-body">
+                <form id="quote-form" class="quote-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="quote-name" class="form-label">
+                                Nome Completo *
+                            </label>
+                            <input 
+                                type="text" 
+                                id="quote-name" 
+                                name="name" 
+                                class="form-input" 
+                                placeholder="Maria Silva"
+                                required
+                                aria-describedby="quote-name-error"
+                            >
+                            <div id="quote-name-error" class="form-error" role="alert"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="quote-email" class="form-label">
+                                Email *
+                            </label>
+                            <input 
+                                type="email" 
+                                id="quote-email" 
+                                name="email" 
+                                class="form-input" 
+                                placeholder="maria@example.com"
+                                required
+                                aria-describedby="quote-email-error"
+                            >
+                            <div id="quote-email-error" class="form-error" role="alert"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="quote-phone" class="form-label">
+                                Telefone *
+                            </label>
+                            <input 
+                                type="tel" 
+                                id="quote-phone" 
+                                name="phone" 
+                                class="form-input" 
+                                placeholder="+351 912 345 678"
+                                required
+                                aria-describedby="quote-phone-error"
+                            >
+                            <div id="quote-phone-error" class="form-error" role="alert"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="quote-travelers" class="form-label">
+                                Número de Viajantes *
+                            </label>
+                            <select id="quote-travelers" name="travelers" class="form-select" required>
+                                <option value="">Selecionar...</option>
+                                <option value="1">1 pessoa</option>
+                                <option value="2">2 pessoas</option>
+                                <option value="3-4">3-4 pessoas</option>
+                                <option value="5-6">5-6 pessoas</option>
+                                <option value="7+">7+ pessoas</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="quote-destination" class="form-label">
+                            Destino de Interesse *
+                        </label>
+                        <input 
+                            type="text" 
+                            id="quote-destination" 
+                            name="destination" 
+                            class="form-input" 
+                            placeholder="Ex: Santorini, Grécia"
+                            required
+                            aria-describedby="quote-destination-error"
+                        >
+                        <div id="quote-destination-error" class="form-error" role="alert"></div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="quote-departure" class="form-label">
+                                Data de Partida *
+                            </label>
+                            <input 
+                                type="date" 
+                                id="quote-departure" 
+                                name="departure" 
+                                class="form-input" 
+                                required
+                                aria-describedby="quote-departure-error"
+                            >
+                            <div id="quote-departure-error" class="form-error" role="alert"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="quote-duration" class="form-label">
+                                Duração *
+                            </label>
+                            <select id="quote-duration" name="duration" class="form-select" required>
+                                <option value="">Selecionar...</option>
+                                <option value="3-5">3-5 dias</option>
+                                <option value="6-8">6-8 dias</option>
+                                <option value="9-12">9-12 dias</option>
+                                <option value="13+">13+ dias</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="quote-budget" class="form-label">
+                            Orçamento Aproximado
+                        </label>
+                        <select id="quote-budget" name="budget" class="form-select">
+                            <option value="">Selecionar...</option>
+                            <option value="500-1000">€500 - €1.000</option>
+                            <option value="1000-2000">€1.000 - €2.000</option>
+                            <option value="2000-3000">€2.000 - €3.000</option>
+                            <option value="3000-5000">€3.000 - €5.000</option>
+                            <option value="5000+">€5.000+</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="quote-interests" class="form-label">
+                            Interesses Especiais
+                        </label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests" value="beach">
+                                <span class="checkbox-label">Praia</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests" value="culture">
+                                <span class="checkbox-label">Cultura</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests" value="adventure">
+                                <span class="checkbox-label">Aventura</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests" value="romance">
+                                <span class="checkbox-label">Romance</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests" value="food">
+                                <span class="checkbox-label">Gastronomia</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests" value="nature">
+                                <span class="checkbox-label">Natureza</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="quote-message" class="form-label">
+                            Mensagem Adicional
+                        </label>
+                        <textarea 
+                            id="quote-message" 
+                            name="message" 
+                            class="form-textarea" 
+                            placeholder="Conte-nos mais sobre a tua viagem dos sonhos..."
+                            rows="4"
+                        ></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-outline" id="quote-cancel">
+                            Cancelar
+                        </button>
+                        <button type="submit" class="btn btn-accent btn-lg">
+                            <i data-lucide="send" class="icon"></i>
+                            Pedir Orçamento
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Consultor -->
+    <div id="consultant-modal" class="modal" role="dialog" aria-labelledby="consultant-modal-title" aria-hidden="true">
+        <div class="modal-overlay" aria-hidden="true"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="consultant-modal-title" class="modal-title">
+                    <i data-lucide="users" class="icon"></i>
+                    Torna-te Consultor Njoy
+                </h2>
+                <button class="modal-close" aria-label="Fechar modal">
+                    <i data-lucide="x" class="icon"></i>
+                </button>
+            </div>
+            
+            <div class="modal-body">
+                <form id="consultant-form" class="consultant-form" novalidate>
+                    <div class="form-section">
+                        <h3 class="form-section-title">Informações Pessoais</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="consultant-name" class="form-label">
+                                    Nome Completo *
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="consultant-name" 
+                                    name="name" 
+                                    class="form-input" 
+                                    placeholder="Maria Silva"
+                                    required
+                                    aria-describedby="consultant-name-error"
+                                >
+                                <div id="consultant-name-error" class="form-error" role="alert"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="consultant-email" class="form-label">
+                                    Email *
+                                </label>
+                                <input 
+                                    type="email" 
+                                    id="consultant-email" 
+                                    name="email" 
+                                    class="form-input" 
+                                    placeholder="maria@example.com"
+                                    required
+                                    aria-describedby="consultant-email-error"
+                                >
+                                <div id="consultant-email-error" class="form-error" role="alert"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="consultant-phone" class="form-label">
+                                    Telefone *
+                                </label>
+                                <input 
+                                    type="tel" 
+                                    id="consultant-phone" 
+                                    name="phone" 
+                                    class="form-input" 
+                                    placeholder="+351 912 345 678"
+                                    required
+                                    aria-describedby="consultant-phone-error"
+                                >
+                                <div id="consultant-phone-error" class="form-error" role="alert"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="consultant-age" class="form-label">
+                                    Idade *
+                                </label>
+                                <input 
+                                    type="number" 
+                                    id="consultant-age" 
+                                    name="age" 
+                                    class="form-input" 
+                                    placeholder="25"
+                                    min="18"
+                                    max="65"
+                                    required
+                                    aria-describedby="consultant-age-error"
+                                >
+                                <div id="consultant-age-error" class="form-error" role="alert"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="consultant-location" class="form-label">
+                                Localização *
+                            </label>
+                            <input 
+                                type="text" 
+                                id="consultant-location" 
+                                name="location" 
+                                class="form-input" 
+                                placeholder="Lisboa, Portugal"
+                                required
+                                aria-describedby="consultant-location-error"
+                            >
+                            <div id="consultant-location-error" class="form-error" role="alert"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3 class="form-section-title">Experiência e Especialização</h3>
+                        
+                        <div class="form-group">
+                            <label for="consultant-experience" class="form-label">
+                                Anos de Experiência em Turismo *
+                            </label>
+                            <select id="consultant-experience" name="experience" class="form-select" required>
+                                <option value="">Selecionar...</option>
+                                <option value="0-1">0-1 anos</option>
+                                <option value="2-3">2-3 anos</option>
+                                <option value="4-5">4-5 anos</option>
+                                <option value="6-10">6-10 anos</option>
+                                <option value="10+">10+ anos</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="consultant-specialties" class="form-label">
+                                Especializações *
+                            </label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="specialties" value="europe">
+                                    <span class="checkbox-label">Europa</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="specialties" value="asia">
+                                    <span class="checkbox-label">Ásia</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="specialties" value="americas">
+                                    <span class="checkbox-label">Américas</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="specialties" value="africa">
+                                    <span class="checkbox-label">África</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="specialties" value="luxury">
+                                    <span class="checkbox-label">Viagens de Luxo</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="specialties" value="adventure">
+                                    <span class="checkbox-label">Turismo de Aventura</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="consultant-languages" class="form-label">
+                                Idiomas Falados *
+                            </label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="languages" value="portuguese" checked>
+                                    <span class="checkbox-label">Português</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="languages" value="english">
+                                    <span class="checkbox-label">Inglês</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="languages" value="spanish">
+                                    <span class="checkbox-label">Espanhol</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="languages" value="french">
+                                    <span class="checkbox-label">Francês</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="languages" value="italian">
+                                    <span class="checkbox-label">Italiano</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="languages" value="other">
+                                    <span class="checkbox-label">Outro</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3 class="form-section-title">Motivação e Disponibilidade</h3>
+                        
+                        <div class="form-group">
+                            <label for="consultant-motivation" class="form-label">
+                                Porque queres ser consultor Njoy? *
+                            </label>
+                            <textarea 
+                                id="consultant-motivation" 
+                                name="motivation" 
+                                class="form-textarea" 
+                                placeholder="Explica-nos a tua paixão por viagens e o que te motiva a ajudar outros a descobrir o mundo..."
+                                rows="4"
+                                required
+                                aria-describedby="consultant-motivation-error"
+                            ></textarea>
+                            <div id="consultant-motivation-error" class="form-error" role="alert"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="consultant-availability" class="form-label">
+                                Disponibilidade *
+                            </label>
+                            <div class="radio-group">
+                                <label class="radio-item">
+                                    <input type="radio" name="availability" value="full-time" required>
+                                    <span class="radio-label">Tempo Inteiro</span>
+                                </label>
+                                <label class="radio-item">
+                                    <input type="radio" name="availability" value="part-time" required>
+                                    <span class="radio-label">Part-time</span>
+                                </label>
+                                <label class="radio-item">
+                                    <input type="radio" name="availability" value="weekends" required>
+                                    <span class="radio-label">Fins de Semana</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="consultant-references" class="form-label">
+                                Referências (opcional)
+                            </label>
+                            <textarea 
+                                id="consultant-references" 
+                                name="references" 
+                                class="form-textarea" 
+                                placeholder="Menciona qualquer experiência relevante, certificações ou referências..."
+                                rows="3"
+                            ></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-outline" id="consultant-cancel">
+                            Cancelar
+                        </button>
+                        <button type="submit" class="btn btn-accent btn-lg">
+                            <i data-lucide="user-plus" class="icon"></i>
+                            Candidatar-me
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
