@@ -49,23 +49,25 @@ Uma landing page moderna e acessível para a Njoy Travel.pt, implementando o des
 ## 🛠️ Estrutura do Projeto
 
 ```
-Njoy v1/
+njoy-travel-landing/
 ├── index.html          # Página principal
 ├── styles.css          # Design system completo
 ├── script.js           # Funcionalidades interativas
-└── README.md           # Documentação
+├── README.md           # Documentação
+└── .gitignore         # Arquivos a ignorar
 ```
 
 ## 🎯 Seções da Landing Page
 
 ### 1. **Hero Section**
-- Título impactante com gradiente
-- CTAs principais (vídeo manifesto + tornar consultor)
+- Título impactante com imagem real de viagens
+- CTAs principais (pedir orçamento + tornar consultor)
 - Estatísticas de confiança
 - Background com overlay
 
 ### 2. **Destinos**
 - Grid de 3 destinos (Santorini, Bali, Tóquio)
+- Imagens reais das cidades
 - Cards interativos com hover effects
 - Badges de categoria e ofertas
 - Preços e informações detalhadas
@@ -76,12 +78,18 @@ Njoy v1/
 - Ratings e avaliações
 - CTAs para contacto direto
 
-### 4. **CTA Final**
+### 4. **Formulários**
+- **Modal de Orçamento**: Formulário completo para clientes
+- **Modal de Consultor**: Candidatura detalhada para consultores
+- Validação em tempo real
+- Estados de loading e sucesso
+
+### 5. **CTA Final**
 - Chamada para ação principal
 - Botões para WhatsApp e tornar consultor
 - Background diferenciado
 
-### 5. **Footer**
+### 6. **Footer**
 - Links organizados por categoria
 - Redes sociais
 - Informações da empresa
